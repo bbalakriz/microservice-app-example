@@ -93,12 +93,12 @@ items:
             -
               name: AUTH_API_ADDRESS
               value: http://auth-api:8081
-        ports:
-        - containerPort: 6379
-        image: redis
-        name: redis
-        imagePullPolicy: Always
-        restartPolicy: Always
+          ports:
+          - containerPort: 6379
+          image: redis
+          name: redis
+          imagePullPolicy: Always
+          restartPolicy: Always
   - apiVersion: v1
     kind: Service
     metadata:
